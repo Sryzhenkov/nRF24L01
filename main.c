@@ -8,6 +8,8 @@
 #include "Timer.h"
 #include "NVIC.h"
 
+#define VERSION_SW 			"v.0.0.1"
+
 #ifdef NRF_TX_MODE
 static uint8_t inc = 0;
 #endif
@@ -23,7 +25,7 @@ int main()
 	uartInit();
 	spiInit();
 	
-	SEND("START APPLICATION\r\n")
+	SEND("START APPLICATION\r\n%s\r\n",VERSION_SW)
 	SEND("[NRF] Status: %s\r\n", CheckNRF24())
 	
 	InitNRF24(&sNRFInfo);
