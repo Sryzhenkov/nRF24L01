@@ -1,18 +1,14 @@
-#include "stm32f10x.h"
-#include "System.h"
-#include "Led.h"
-#include "Uart.h"
-#include "spi.h"
-#include "nRF24.h"
-#include "SysTick.h"
-#include "Timer.h"
-#include "NVIC.h"
+#include "GlobalSettings.h"
 
-#define VERSION_SW 			"v.0.0.1"
+const static char* const globalState[]	= {"Disconnected", "Connected"};
 
 #ifdef NRF_TX_MODE
 static uint8_t inc = 0;
 #endif
+
+t_SystemInfo sSystemInfo = {
+																.status = 0,
+};
 
 int main()
 {
@@ -25,13 +21,26 @@ int main()
 	uartInit();
 	spiInit();
 	
-	SEND("START APPLICATION\r\n%s\r\n",VERSION_SW)
-	SEND("[NRF] Status: %s\r\n", CheckNRF24())
+	SEND("START APPLICATION\r\n%s\r\n",SW_VERSION)
 	
-	InitNRF24(&sNRFInfo);
-	ReadAllReg();
+	//TODO: later
+	sSystemInfo.status = CheckNRF24();		
 	
-	delay(10000);
+	SEND("[NRF] Status: %s\r\n", globalState[sSystemInfo.status])
+	
+	if(sSystemInfo.status)
+	 {
+			InitNRF24(&sNRFInfo);
+			ReadAllReg(); 
+		}
+	else
+		{
+			SEND("[NRF] Please connect the module and reboot this device\r\n")
+			return 0;
+		}
+	
+		delay(10000);
+		
 #ifdef NRF_RX_MODE
 	CE_HIGH
 #endif

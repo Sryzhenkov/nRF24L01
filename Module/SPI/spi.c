@@ -38,8 +38,6 @@ void t_spiSend(uint8_t* data, uint32_t count, uint8_t mode)
 
 		do
 		{
-			PC13_CHANGE
-			
 			while(!(SPI1->SR & SPI_SR_TXE));
 	
 			if(mode == 1)

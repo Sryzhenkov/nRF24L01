@@ -1,9 +1,7 @@
 #ifndef __NRF24_H
 #define __NRF24_H
 
-#include "stm32f10x.h"
-#include "spi.h"
-#include "Led.h"
+#include "GlobalSettings.h"
 
 //#define REG_SUMARY_NUM     (sizeof(regArr)/sizeof(regArr[0]))
 
@@ -141,11 +139,11 @@ typedef struct{
 extern t_nrfInfo sNRFInfo;
 
 
-extern char* CheckNRF24(void);
-extern void  ReadAllReg(void);
-extern void ReadNRF24(uint8_t reg, uint8_t* buff, uint8_t len);
-extern void  WriteNRF24(uint8_t reg, uint8_t* buff, uint8_t len);
-extern void  InitNRF24(t_nrfInfo*);
+extern uint8_t  CheckNRF24(void);
+extern void  	  ReadAllReg(void);
+extern void     ReadNRF24(uint8_t reg, uint8_t* buff, uint8_t len);
+extern void     WriteNRF24(uint8_t reg, uint8_t* buff, uint8_t len);
+extern void     InitNRF24(t_nrfInfo*);
 
 
 #endif /* __NRF24_H */

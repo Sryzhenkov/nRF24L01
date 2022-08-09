@@ -1,5 +1,4 @@
 #include "NVIC.h"
-#include "Uart.h"
 
 void NVIC_Init(void)
 {
@@ -21,19 +20,22 @@ void NVIC_Init(void)
 }
 
 #ifdef NRF_RX_MODE
-static uint8_t r = 0;
+static uint16_t r = 0;
 #endif
 
 void EXTI15_10_IRQHandler(void)
 {
 	t_nrfInfo* pNRFInfo = &sNRFInfo;
 	
-	EXTI->PR |= EXTI_PR_PR12;
-	//EXTI->IMR  &= ~EXTI_IMR_MR12;
+	EXTI->PR |= EXTI_PR_PR12;	
+
+	PC13_CHANGE	
+	
 #ifdef NRF_RX_MODE
-	ReadNRF24(CMD_R_RX_PAYLOAD,&r,2);	
-	SEND("[NRF] Read....%u\r\n", r)
+	ReadNRF24(CMD_R_RX_PAYLOAD,(uint8_t*)&r,2);	
+	SEND("[NRF] Read....%x %u\r\n", *((uint8_t*)&r),*(((uint8_t*)&r)+1))
 #endif
+	
 	WriteNRF24(REG_STATUS,&(pNRFInfo->status),1);
 	
 	SEND("OK\r\n")

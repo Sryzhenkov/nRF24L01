@@ -1,8 +1,7 @@
 #ifndef _SYSTICK_LM3S_
 #define _SYSTICK_LM3S_
 
-#include "stm32f10x.h"
-#include "Timer.h"
+#include "GlobalSettings.h"
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 extern volatile  uint32_t  sys_timecount;

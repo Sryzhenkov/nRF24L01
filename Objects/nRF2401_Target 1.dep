@@ -1,113 +1,166 @@
 Dependencies for Project 'nRF2401', Target 'Target 1': (DO NOT MODIFY !)
-CompilerVersion: 6160000::V6.16::ARMCLANG
-F (.\main.c)(0x62EC5EDE)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-ID:/Work/KEIL/Pack/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Work/KEIL/Pack/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DxNRF_TX_MODE -DNRF_RX_MODE-o ./objects/main.o -MD)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h)(0x61ADBFAE)
-I (RTE\_Target_1\RTE_Components.h)(0x61FD6DBA)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626F912E)
-I (D:\Work\KEIL\Core\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\system_stm32f10x.h)(0x61ADBFAE)
-I (Module\SYSTEM\System.h)(0x61C2F0A0)
-I (Module\LED\Led.h)(0x61FD8737)
-I (Module\UART\Uart.h)(0x61EB3980)
-I (D:\Work\KEIL\Core\ARM\ARMCLANG\include\stdio.h)(0x60355C34)
-I (Module\SPI\spi.h)(0x62EC2E82)
-I (Module\NRF24\nRF24.h)(0x62EC5672)
-I (Module\TIMER\SysTick.h)(0x62EC3BA2)
-I (Module\TIMER\Timer.h)(0x62EC3C5B)
-I (Module\NVIC\NVIC.h)(0x62EC4847)
-F (.\Module\System\System.c)(0x61C2F09A)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-ID:/Work/KEIL/Pack/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Work/KEIL/Pack/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DxNRF_TX_MODE -DNRF_RX_MODE-o ./objects/system.o -MD)
-I (Module\SYSTEM\System.h)(0x61C2F0A0)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h)(0x61ADBFAE)
-I (RTE\_Target_1\RTE_Components.h)(0x61FD6DBA)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626F912E)
-I (D:\Work\KEIL\Core\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\system_stm32f10x.h)(0x61ADBFAE)
-F (.\Module\UART\Uart.c)(0x61EB399C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-ID:/Work/KEIL/Pack/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Work/KEIL/Pack/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DxNRF_TX_MODE -DNRF_RX_MODE-o ./objects/uart.o -MD)
-I (Module\UART\Uart.h)(0x61EB3980)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h)(0x61ADBFAE)
-I (RTE\_Target_1\RTE_Components.h)(0x61FD6DBA)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626F912E)
-I (D:\Work\KEIL\Core\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\system_stm32f10x.h)(0x61ADBFAE)
-I (D:\Work\KEIL\Core\ARM\ARMCLANG\include\stdio.h)(0x60355C34)
-F (.\Module\SPI\spi.c)(0x62EC2E7B)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-ID:/Work/KEIL/Pack/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Work/KEIL/Pack/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DxNRF_TX_MODE -DNRF_RX_MODE-o ./objects/spi.o -MD)
-I (Module\SPI\spi.h)(0x62EC2E82)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h)(0x61ADBFAE)
-I (RTE\_Target_1\RTE_Components.h)(0x61FD6DBA)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626F912E)
-I (D:\Work\KEIL\Core\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\system_stm32f10x.h)(0x61ADBFAE)
-I (Module\LED\Led.h)(0x61FD8737)
-F (.\Module\NRF24\nRF24.c)(0x62EC58AE)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-ID:/Work/KEIL/Pack/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Work/KEIL/Pack/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DxNRF_TX_MODE -DNRF_RX_MODE-o ./objects/nrf24.o -MD)
-I (Module\NRF24\nRF24.h)(0x62EC5672)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h)(0x61ADBFAE)
-I (RTE\_Target_1\RTE_Components.h)(0x61FD6DBA)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626F912E)
-I (D:\Work\KEIL\Core\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\system_stm32f10x.h)(0x61ADBFAE)
-I (Module\SPI\spi.h)(0x62EC2E82)
-I (Module\LED\Led.h)(0x61FD8737)
-I (Module\UART\Uart.h)(0x61EB3980)
-I (D:\Work\KEIL\Core\ARM\ARMCLANG\include\stdio.h)(0x60355C34)
-F (.\Module\TIMER\Timer.c)(0x62EC3B76)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-ID:/Work/KEIL/Pack/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Work/KEIL/Pack/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DxNRF_TX_MODE -DNRF_RX_MODE-o ./objects/timer.o -MD)
-I (Module\TIMER\Timer.h)(0x62EC3C5B)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h)(0x61ADBFAE)
-I (RTE\_Target_1\RTE_Components.h)(0x61FD6DBA)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626F912E)
-I (D:\Work\KEIL\Core\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\system_stm32f10x.h)(0x61ADBFAE)
-F (.\Module\TIMER\SysTick.c)(0x62EC3C44)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-ID:/Work/KEIL/Pack/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Work/KEIL/Pack/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DxNRF_TX_MODE -DNRF_RX_MODE-o ./objects/systick.o -MD)
-I (Module\TIMER\SysTick.h)(0x62EC3BA2)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h)(0x61ADBFAE)
-I (RTE\_Target_1\RTE_Components.h)(0x61FD6DBA)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626F912E)
-I (D:\Work\KEIL\Core\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\system_stm32f10x.h)(0x61ADBFAE)
-I (Module\TIMER\Timer.h)(0x62EC3C5B)
-F (.\Module\NVIC\NVIC.c)(0x62EC56EB)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-ID:/Work/KEIL/Pack/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Work/KEIL/Pack/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DxNRF_TX_MODE -DNRF_RX_MODE-o ./objects/nvic.o -MD)
-I (Module\NVIC\NVIC.h)(0x62EC4847)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h)(0x61ADBFAE)
-I (RTE\_Target_1\RTE_Components.h)(0x61FD6DBA)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626F912E)
-I (D:\Work\KEIL\Core\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\system_stm32f10x.h)(0x61ADBFAE)
-I (Module\SPI\spi.h)(0x62EC2E82)
-I (Module\LED\Led.h)(0x61FD8737)
-I (Module\NRF24\nRF24.h)(0x62EC5672)
-I (Module\UART\Uart.h)(0x61EB3980)
-I (D:\Work\KEIL\Core\ARM\ARMCLANG\include\stdio.h)(0x60355C34)
-F (RTE\Device\STM32F103C8\RTE_Device.h)(0x592825F6)()
-F (RTE\Device\STM32F103C8\startup_stm32f10x_md.s)(0x61ADBFAE)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto -c-gdwarf-4 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-ID:/Work/KEIL/Pack/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Work/KEIL/Pack/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 536" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32F10X_MD SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32f10x_md.o)
-F (RTE\Device\STM32F103C8\system_stm32f10x.c)(0x62EC3CCE)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-ID:/Work/KEIL/Pack/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Work/KEIL/Pack/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DxNRF_TX_MODE -DNRF_RX_MODE-o ./objects/system_stm32f10x.o -MD)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h)(0x61ADBFAE)
-I (RTE\_Target_1\RTE_Components.h)(0x61FD6DBA)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626F912E)
-I (D:\Work\KEIL\Core\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
-I (D:\Work\KEIL\Pack\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\system_stm32f10x.h)(0x61ADBFAE)
+CompilerVersion: 6150000::V6.15::ARMCLANG
+F (.\main.c)(0x62F26503)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -I ../nRF24L01 -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IE:/Program/Keil_v5/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IE:/Program/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/main.o -MD)
+I (..\nRF24L01\GlobalSettings.h)(0x62F263F1)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5F372514)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x58257EBC)
+I (RTE\_Target_1\RTE_Components.h)(0x62F20396)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D42F32)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F372508)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x58257EBC)
+I (Module\SYSTEM\System.h)(0x62F21408)
+I (Module\LED\Led.h)(0x62F20367)
+I (Module\UART\Uart.h)(0x62F2141E)
+I (Module\SPI\spi.h)(0x62F2142A)
+I (Module\NRF24\nRF24.h)(0x62F215CD)
+I (Module\TIMER\SysTick.h)(0x62F2144E)
+I (Module\TIMER\Timer.h)(0x62F21439)
+I (Module\NVIC\NVIC.h)(0x62F21460)
+F (.\GlobalSettings.h)(0x62F263F1)()
+F (.\Module\System\System.c)(0x62F2140F)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -I ../nRF24L01 -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IE:/Program/Keil_v5/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IE:/Program/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/system.o -MD)
+I (Module\SYSTEM\System.h)(0x62F21408)
+I (..\nRF24L01\GlobalSettings.h)(0x62F263F1)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5F372514)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x58257EBC)
+I (RTE\_Target_1\RTE_Components.h)(0x62F20396)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D42F32)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F372508)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x58257EBC)
+I (Module\LED\Led.h)(0x62F20367)
+I (Module\UART\Uart.h)(0x62F2141E)
+I (Module\SPI\spi.h)(0x62F2142A)
+I (Module\NRF24\nRF24.h)(0x62F215CD)
+I (Module\TIMER\SysTick.h)(0x62F2144E)
+I (Module\TIMER\Timer.h)(0x62F21439)
+I (Module\NVIC\NVIC.h)(0x62F21460)
+F (.\Module\UART\Uart.c)(0x62F20367)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -I ../nRF24L01 -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IE:/Program/Keil_v5/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IE:/Program/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/uart.o -MD)
+I (Module\UART\Uart.h)(0x62F2141E)
+I (..\nRF24L01\GlobalSettings.h)(0x62F263F1)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5F372514)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x58257EBC)
+I (RTE\_Target_1\RTE_Components.h)(0x62F20396)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D42F32)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F372508)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x58257EBC)
+I (Module\SYSTEM\System.h)(0x62F21408)
+I (Module\LED\Led.h)(0x62F20367)
+I (Module\SPI\spi.h)(0x62F2142A)
+I (Module\NRF24\nRF24.h)(0x62F215CD)
+I (Module\TIMER\SysTick.h)(0x62F2144E)
+I (Module\TIMER\Timer.h)(0x62F21439)
+I (Module\NVIC\NVIC.h)(0x62F21460)
+F (.\Module\SPI\spi.c)(0x62F2488E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -I ../nRF24L01 -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IE:/Program/Keil_v5/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IE:/Program/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/spi.o -MD)
+I (Module\SPI\spi.h)(0x62F2142A)
+I (..\nRF24L01\GlobalSettings.h)(0x62F263F1)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5F372514)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x58257EBC)
+I (RTE\_Target_1\RTE_Components.h)(0x62F20396)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D42F32)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F372508)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x58257EBC)
+I (Module\SYSTEM\System.h)(0x62F21408)
+I (Module\LED\Led.h)(0x62F20367)
+I (Module\UART\Uart.h)(0x62F2141E)
+I (Module\NRF24\nRF24.h)(0x62F215CD)
+I (Module\TIMER\SysTick.h)(0x62F2144E)
+I (Module\TIMER\Timer.h)(0x62F21439)
+I (Module\NVIC\NVIC.h)(0x62F21460)
+F (.\Module\NRF24\nRF24.c)(0x62F2638C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -I ../nRF24L01 -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IE:/Program/Keil_v5/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IE:/Program/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/nrf24.o -MD)
+I (Module\NRF24\nRF24.h)(0x62F215CD)
+I (..\nRF24L01\GlobalSettings.h)(0x62F263F1)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5F372514)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x58257EBC)
+I (RTE\_Target_1\RTE_Components.h)(0x62F20396)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D42F32)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F372508)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x58257EBC)
+I (Module\SYSTEM\System.h)(0x62F21408)
+I (Module\LED\Led.h)(0x62F20367)
+I (Module\UART\Uart.h)(0x62F2141E)
+I (Module\SPI\spi.h)(0x62F2142A)
+I (Module\TIMER\SysTick.h)(0x62F2144E)
+I (Module\TIMER\Timer.h)(0x62F21439)
+I (Module\NVIC\NVIC.h)(0x62F21460)
+F (.\Module\TIMER\Timer.c)(0x62F20367)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -I ../nRF24L01 -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IE:/Program/Keil_v5/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IE:/Program/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/timer.o -MD)
+I (Module\TIMER\Timer.h)(0x62F21439)
+I (..\nRF24L01\GlobalSettings.h)(0x62F263F1)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5F372514)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x58257EBC)
+I (RTE\_Target_1\RTE_Components.h)(0x62F20396)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D42F32)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F372508)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x58257EBC)
+I (Module\SYSTEM\System.h)(0x62F21408)
+I (Module\LED\Led.h)(0x62F20367)
+I (Module\UART\Uart.h)(0x62F2141E)
+I (Module\SPI\spi.h)(0x62F2142A)
+I (Module\NRF24\nRF24.h)(0x62F215CD)
+I (Module\TIMER\SysTick.h)(0x62F2144E)
+I (Module\NVIC\NVIC.h)(0x62F21460)
+F (.\Module\TIMER\SysTick.c)(0x62F20367)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -I ../nRF24L01 -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IE:/Program/Keil_v5/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IE:/Program/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/systick.o -MD)
+I (Module\TIMER\SysTick.h)(0x62F2144E)
+I (..\nRF24L01\GlobalSettings.h)(0x62F263F1)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5F372514)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x58257EBC)
+I (RTE\_Target_1\RTE_Components.h)(0x62F20396)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D42F32)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F372508)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x58257EBC)
+I (Module\SYSTEM\System.h)(0x62F21408)
+I (Module\LED\Led.h)(0x62F20367)
+I (Module\UART\Uart.h)(0x62F2141E)
+I (Module\SPI\spi.h)(0x62F2142A)
+I (Module\NRF24\nRF24.h)(0x62F215CD)
+I (Module\TIMER\Timer.h)(0x62F21439)
+I (Module\NVIC\NVIC.h)(0x62F21460)
+F (.\Module\NVIC\NVIC.c)(0x62F248B6)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -I ../nRF24L01 -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IE:/Program/Keil_v5/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IE:/Program/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/nvic.o -MD)
+I (Module\NVIC\NVIC.h)(0x62F21460)
+I (..\nRF24L01\GlobalSettings.h)(0x62F263F1)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5F372514)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x58257EBC)
+I (RTE\_Target_1\RTE_Components.h)(0x62F20396)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D42F32)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F372508)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x58257EBC)
+I (Module\SYSTEM\System.h)(0x62F21408)
+I (Module\LED\Led.h)(0x62F20367)
+I (Module\UART\Uart.h)(0x62F2141E)
+I (Module\SPI\spi.h)(0x62F2142A)
+I (Module\NRF24\nRF24.h)(0x62F215CD)
+I (Module\TIMER\SysTick.h)(0x62F2144E)
+I (Module\TIMER\Timer.h)(0x62F21439)
+F (RTE\Device\STM32F103C8\RTE_Device.h)(0x62F20367)()
+F (RTE\Device\STM32F103C8\startup_stm32f10x_md.s)(0x62F20367)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto -c-gdwarf-3 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IE:/Program/Keil_v5/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IE:/Program/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 533" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32F10X_MD SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32f10x_md.o)
+F (RTE\Device\STM32F103C8\system_stm32f10x.c)(0x62F20367)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Module -I ./Module/SYSTEM -I ./Module/LED -I ./Module/UART -I ./Module/SPI -I ./Module/NRF24 -I ./Module/TIMER -I ./Module/NVIC -I ../nRF24L01 -Wno-gnu-zero-variadic-macro-arguments-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IE:/Program/Keil_v5/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IE:/Program/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/system_stm32f10x.o -MD)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x58257EBC)
+I (RTE\_Target_1\RTE_Components.h)(0x62F20396)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D42F32)
+I (E:\Program\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F372508)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D42F32)
+I (E:\Program\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x58257EBC)

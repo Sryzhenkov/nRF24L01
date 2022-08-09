@@ -1,8 +1,7 @@
 #ifndef __SPI_H
 #define __SPI_H
 
-#include "stm32f10x.h"
-#include "Led.h"
+#include "GlobalSettings.h"
 
 #define		 CE_LOW 	GPIOA->ODR &= (uint16_t)~GPIO_ODR_ODR3;
 #define 	 CE_HIGH 	GPIOA->ODR |= GPIO_ODR_ODR3;
