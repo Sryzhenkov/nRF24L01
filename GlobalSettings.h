@@ -14,7 +14,7 @@
 #include "Timer.h"
 #include "NVIC.h"
 //**********************************************************************
-#define SW_VERSION					"v.0.0.2"
+#define SW_VERSION					"v.0.0.3"
 
 //#define NRF_TX_MODE
 #define NRF_RX_MODE

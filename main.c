@@ -32,6 +32,8 @@ int main()
 	 {
 			InitNRF24(&sNRFInfo);
 			ReadAllReg(); 
+		 
+			//WriteNRF24(CMD_FLUSH_RX,NULL,0); //need to check 
 		}
 	else
 		{
@@ -39,7 +41,7 @@ int main()
 			return 0;
 		}
 	
-		delay(10000);
+		delay(1000);
 		
 #ifdef NRF_RX_MODE
 	CE_HIGH
@@ -54,7 +56,7 @@ int main()
 			delay(1);
 			CE_LOW
 			
-			SEND("[NRF] Send....\r\n")
+			SEND("[NRF] Send....%u\r\n",inc)
 			
 			inc++;
 			

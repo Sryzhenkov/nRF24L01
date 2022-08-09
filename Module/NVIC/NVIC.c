@@ -20,23 +20,30 @@ void NVIC_Init(void)
 }
 
 #ifdef NRF_RX_MODE
-static uint16_t r = 0;
+static uint8_t r = 0;
 #endif
 
 void EXTI15_10_IRQHandler(void)
 {
 	t_nrfInfo* pNRFInfo = &sNRFInfo;
+	uint8_t 	 clearStatus	= 0x70;
 	
 	EXTI->PR |= EXTI_PR_PR12;	
 
 	PC13_CHANGE	
 	
 #ifdef NRF_RX_MODE
-	ReadNRF24(CMD_R_RX_PAYLOAD,(uint8_t*)&r,2);	
-	SEND("[NRF] Read....%x %u\r\n", *((uint8_t*)&r),*(((uint8_t*)&r)+1))
+	ReadNRF24(CMD_R_RX_PAYLOAD,&r,1);	
+	pNRFInfo->status = ReadNRF24(REG_RPD,&(pNRFInfo->RPD),1);
+	SEND("[NRF] Read....%u\r\n[NRF] S: %x | RPD: %x\r\n", r,pNRFInfo->status,pNRFInfo->RPD)	//if RP(Received Power) > -64dBm ---> RPD = 1 // else RP < -64dBm ---> RPD = 0 
 #endif
 	
-	WriteNRF24(REG_STATUS,&(pNRFInfo->status),1);
+#ifdef NRF_TX_MODE
+	pNRFInfo->status = ReadNRF24(REG_OBSERVE_TX,&(pNRFInfo->obsTX),1);
+	SEND("[NRF] S: %x | OBS: %x\r\n", pNRFInfo->status, pNRFInfo->obsTX)
+#endif
+	
+	WriteNRF24(REG_STATUS,&clearStatus,1);
 	
 	SEND("OK\r\n")
 }

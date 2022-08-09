@@ -18,21 +18,16 @@ t_nrfInfo sNRFInfo = {
 #elif defined NRF_RX_MODE
 												.config 		 = 0x0B,
 #endif
-												.enAutoACK 	 = 0x02,
-												.enRxAddr 	 = 0x02,
+												.enAutoACK 	 = 0x01,
+												.enRxAddr 	 = 0x01,
 												.autoRet		 = RETR_SETUP_VALUE(RETR_ARD_1250,RETR_ARC_15),
 												.channel  	 = 115,
 												.setRF    	 = RF_SETUP_VALUE(RF_SET_BR_1MBPS,RF_SET_OP_0_DBM),
 												.status 		 = 0x70,
-												.rxAddrP0		 = {0xAA,0xBB,0xCC,0xDD,0xEE},
-												.rxAddrP1		 = {0xE7,0xB1,0xB2,0xA1,0xA2},
-												.rxAddrP2		 = {0xE7,0xB1,0xB2,0xA1,0xB2},
-												.rxAddrP3		 = {0xE7,0xB1,0xB2,0xA1,0xC2},
-												.rxAddrP4		 = {0xE7,0xB1,0xB2,0xA1,0xD2},
-												.rxAddrP5		 = {0xE7,0xB1,0xB2,0xA1,0xE2},
+												.rxAddrP0		 = {0xE7,0xB1,0xB2,0xA1,0xA2},
 												.txAddr			 = {0xE7,0xB1,0xB2,0xA1,0xA2},
-												.rxPayloadP0 = 32,
-												.rxPayloadP1 = 1,
+												.rxPayloadP0 = 1,
+												.rxPayloadP1 = 32,
 												.rxPayloadP2 = 32,
 												.rxPayloadP3 = 32,
 												.rxPayloadP4 = 32,
@@ -47,9 +42,7 @@ uint8_t CheckNRF24(void)
 													 CMD_NOP
 											 };
 	
-	spiSend(command, 2, READ_MODE);		
-
-	//(command[1] >= 1 && command[1] <=3) ? "Connected" : "Disconnected";										 
+	spiSend(command, 2, READ_MODE);									 
 											 
 	return (command[1] >= 1 && command[1] <=3) ? 1 : 0;
 }
@@ -106,20 +99,20 @@ void WriteNRF24(uint8_t reg, uint8_t* buff, uint8_t len)
 	
 	CS_LOW
 	t_spiSend(&temp, 1, WRITE_MODE);
-	t_spiSend(buff,len, WRITE_MODE);
+	if(len > 0) t_spiSend(buff,len, WRITE_MODE);
 	CS_HIGH
 }
 
-void ReadNRF24(uint8_t reg, uint8_t* buff, uint8_t len)
+uint8_t ReadNRF24(uint8_t reg, uint8_t* buff, uint8_t len)
 {	
-	uint8_t command[2] = {0};
+	uint8_t temp = (CMD_READ | reg);
 	
-	command[0] = (reg);
-	command[1] = (CMD_NOP);
-			
-	spiSend(command, len , READ_MODE);
-	*buff = command[0];
-	*(buff+1) = command[1];
+	CS_LOW
+	t_spiSend(&temp, 1, READ_MODE);
+	t_spiSend(buff,len, READ_MODE);
+	CS_HIGH
+	
+	return temp;
 }
 
 void InitNRF24(t_nrfInfo* param)
@@ -136,11 +129,6 @@ void InitNRF24(t_nrfInfo* param)
 	WriteNRF24(REG_RX_PW_P5,&(pNRFInfo->rxPayloadP5),1);
 	
 	WriteNRF24(REG_RX_ADDR_P0,(pNRFInfo->rxAddrP0),5);
-	WriteNRF24(REG_RX_ADDR_P1,(pNRFInfo->rxAddrP1),5);
-	WriteNRF24(REG_RX_ADDR_P2,(pNRFInfo->rxAddrP2),5);
-	WriteNRF24(REG_RX_ADDR_P3,(pNRFInfo->rxAddrP3),5);
-	WriteNRF24(REG_RX_ADDR_P4,(pNRFInfo->rxAddrP4),5);
-	WriteNRF24(REG_RX_ADDR_P5,(pNRFInfo->rxAddrP5),5);
 	WriteNRF24(REG_TX_ADDR,(pNRFInfo->txAddr),5);
 
 	WriteNRF24(REG_RF_SETUP,&(pNRFInfo->setRF),1);

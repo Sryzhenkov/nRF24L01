@@ -116,8 +116,8 @@ typedef struct{
   uint8_t channel;
   uint8_t setRF;
   uint8_t status;
-//  uint8_t obsTX;
-//  uint8_t RPD;
+  uint8_t obsTX;
+  uint8_t RPD;
   uint8_t rxAddrP0[5];
   uint8_t rxAddrP1[5];
   uint8_t rxAddrP2[5];
@@ -141,7 +141,7 @@ extern t_nrfInfo sNRFInfo;
 
 extern uint8_t  CheckNRF24(void);
 extern void  	  ReadAllReg(void);
-extern void     ReadNRF24(uint8_t reg, uint8_t* buff, uint8_t len);
+extern uint8_t  ReadNRF24(uint8_t reg, uint8_t* buff, uint8_t len);
 extern void     WriteNRF24(uint8_t reg, uint8_t* buff, uint8_t len);
 extern void     InitNRF24(t_nrfInfo*);
 
